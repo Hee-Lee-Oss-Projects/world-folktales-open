@@ -1,0 +1,35 @@
+{
+  "id": "world-folktales-open-schema-001",
+  "title": "Define tale schema (provenance, cultural attribution, ATU/motif, language, reading level, warnings)",
+  "project": "world-folktales-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["culture", "folklore", "open-content", "education", "heritage"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "An open, multilingual folktale commons needs a shared tale schema before any content is ingested. Every tale must carry two things: a verifiable copyright provenance (the specific PD/open source edition, not just the ancient tale) and a cultural attribution (origin tradition; sacred/restricted material excluded). Copyright public-domain status is NOT cultural permission. Sources are public-domain or openly-licensed only (Project Gutenberg, Wikisource, Internet Archive PD scans, Standard Ebooks, sacred-texts). See PLAN.md for the two gates.",
+  "objective": "Define the per-tale schema and its machine artifact (schema/tale.schema.json): id, title(s), culture/region/country, ATU type, Thompson motifs, language (BCP-47), artifactType (collected/translated/retold), a full source block with rights basis and verifier, translation/retelling provenance, a cultural-attribution block (with sacred-exclusion and TK context), content warnings, reading level/age range, output license, and a machine-readable provenance chain.",
+  "acceptanceCriteria": [
+    "Schema defines all per-tale fields including provenance, cultural attribution, ATU/motif, BCP-47 language, reading level/age, and content warnings.",
+    "artifactType distinguishes collected, translated, and retold artifacts, each with its own provenance fields.",
+    "'origin: uncertain' is a permitted honest value; no field permits a guessed value.",
+    "Cultural-attribution block supports general vs. living-tradition classification and TK label/notice context.",
+    "Every tale reserves a resolvable source-edition citation slot (edition/page-level) plus a rights-basis field.",
+    "Published as a human-readable spec plus a machine artifact (schema/tale.schema.json) validated by an example tale."
+  ],
+  "resources": [
+    "planning/projects/world-folktales-open/PLAN.md",
+    "packages/schema/src/schemas.ts",
+    "https://www.wikidata.org/",
+    "https://localcontexts.org/",
+    "https://en.wikipedia.org/wiki/Aarne%E2%80%93Thompson%E2%80%93Uther_Index"
+  ],
+  "output": "A tale schema specification document plus schema/tale.schema.json defining every per-tale field (provenance, cultural attribution, ATU/motif, language, reading level, content warnings, license), committed via PR.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC0-1.0"
+}
