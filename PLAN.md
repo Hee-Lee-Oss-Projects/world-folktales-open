@@ -30,7 +30,7 @@ restricted knowledge** (no sacred, secret, or community-restricted story reprodu
 and retell what real sources attest — we never fabricate a tale and pass it off as traditional).
 
 **Locked decisions (M0 ratifies the open ones):**
-- **Stack:** TypeScript + ESM + pnpm tooling (per Elyos conventions); content as Markdown + YAML
+- **Stack:** TypeScript + ESM + pnpm tooling (per Hee-Lee Oss conventions); content as Markdown + YAML
   front-matter; canonical export as JSON + JSON-LD; static explorer; no accounts, no PII, no server.
 - **Classification:** align every tale to the **Aarne–Thompson–Uther (ATU) tale-type index** and
   record **Thompson Motif-Index** motifs where known, so the corpus is interoperable with
@@ -72,7 +72,7 @@ before any tale is published, are what separate this from the many sloppy folkta
 replace.
 
 A named **partner/steward who will adopt, host long-term, and cite the corpus is TO BE SECURED.** The
-*gap* is real and demonstrable, but per the Elyos quality bar ("delivered, not merged") a committed
+*gap* is real and demonstrable, but per the Hee-Lee Oss quality bar ("delivered, not merged") a committed
 last-mile beneficiary has not yet signed on; securing one is a first-class M0–M3 objective and a
 precondition for declaring the project *shipped*. `verifiedNeed` is therefore `false` on all tasks
 until a partner is secured.
@@ -238,7 +238,7 @@ A **content/data pipeline** project (with supporting TypeScript tooling), not a 
    IDs under the project's w3id/PURL namespace.
 
 **Tech stack**
-- Tooling, validators, build: **TypeScript, ESM, pnpm** (per Elyos conventions).
+- Tooling, validators, build: **TypeScript, ESM, pnpm** (per Hee-Lee Oss conventions).
 - Content: **Markdown body + YAML front-matter** per tale; canonical **JSON + JSON-LD** export.
 - Validation: **JSON Schema (Ajv)** + custom provenance/attribution linters wired into CI.
 - Classification vocab: **ATU tale-type index** + **Thompson Motif-Index**; **BCP-47** languages;
@@ -357,7 +357,7 @@ before a tale is "done":
 1. **Copyright/PD review (primary gate, all tales).** A reviewer confirms the `allowlist.yml` entry:
    the *specific edition/translation* is PD or openly licensed and not a laundered modern artifact. No
    collection task starts against a `pending`/`rejected` source. Any task proposing to reuse
-   copyrighted material is **refused and flagged** per Elyos guardrails.
+   copyrighted material is **refused and flagged** per Hee-Lee Oss guardrails.
 2. **Cultural-sensitivity review (living-tradition material + all retellings).** A reviewer with
    relevant cultural competence confirms the tale is not sacred/restricted, that attribution is
    accurate and respectful, and that any retelling preserves meaning. Sacred/restricted ⇒ rejected.
@@ -368,7 +368,7 @@ before a tale is "done":
 corpus with: **100%** of tales carrying a resolvable source-edition citation; **100%** carrying a
 cultural attribution; **100%** of living-tradition/retold items cleared by cultural review; ≥25 regions
 and ≥10 languages; passing JSON-Schema + provenance + attribution CI; with at least one **steward that
-has adopted or cited** it. Per Elyos, *delivered ≠ merged* — it must be in a beneficiary's hands.
+has adopted or cited** it. Per Hee-Lee Oss, *delivered ≠ merged* — it must be in a beneficiary's hands.
 
 **Per-deed Definition of Done.** Acceptance criteria met + CI green (schema/provenance/attribution) +
 copyright review passed + (where applicable) cultural + accuracy review passed + published under the
@@ -413,7 +413,7 @@ effect. Depends on M2.
 ## Work breakdown
 
 The itemized, schema-mapped backlog lives in [`TASKS.md`](./TASKS.md), organized by the milestones
-above (M0–M3) plus a sized backlog. Each task maps to an Elyos Task JSON with type, size, risk tier,
+above (M0–M3) plus a sized backlog. Each task maps to a Hee-Lee Oss Task JSON with type, size, risk tier,
 deliverable, dependencies, and reviewer. M0 deliberately front-loads **both** the copyright and the
 cultural gates before any bulk collection begins.
 
@@ -422,7 +422,7 @@ cultural gates before any bulk collection begins.
 - **Maintainer / Owner:** TBD — accountable for scope, both gates, and releases.
 - **Copyright / PD reviewer:** TBD — approves every `allowlist.yml` edition entry; veto over any
   source. **Naming a qualified person is a hard M0 exit criterion.** *Fallback if empty:* no source
-  advances past `pending`, no collection begins, M0 cannot exit; maintainer escalates to Elyos
+  advances past `pending`, no collection begins, M0 cannot exit; maintainer escalates to Hee-Lee Oss
   governance (and may engage pro-bono counsel) before any data work.
 - **Cultural-sensitivity reviewer(s) (rotation):** people with relevant cultural competence — ideally
   including representatives of originating communities for living-tradition material. **Required before
@@ -435,7 +435,7 @@ cultural gates before any bulk collection begins.
   governs reuse. TO BE SECURED per culture, as needed.
 - **Partner / requestor:** educators, families, language communities, libraries (diffuse beneficiary
   class); a named representative org is TO BE SECURED.
-- **Elyos governance/board:** arbiter for edge cases (a borderline source; a contested cultural
+- **Hee-Lee Oss governance/board:** arbiter for edge cases (a borderline source; a contested cultural
   status) under the published conflict-of-interest/veto checklist.
 
 ## Dependencies & integrations
@@ -446,9 +446,9 @@ cultural gates before any bulk collection begins.
 - **Wikidata** (CC0) for reconciliation and cross-variant linking.
 - **Local Contexts (TK Labels/Notices)** and **CARE Principles** (cultural-governance frameworks).
 - **JSON Schema / Ajv**, a Markdown+YAML toolchain, and a static-site generator (TS/ESM ecosystem).
-- **Elyos pieces:** Task schema (`packages/schema`), CLI workspace/PR flow (`packages/cli`,
+- **Hee-Lee Oss pieces:** Task schema (`packages/schema`), CLI workspace/PR flow (`packages/cli`,
   `packages/core`), governance proposal/registry process. Donated lane — humans run their own agents.
-- **Sibling Elyos projects** as consumers: `literacy-from-zero`, `decodable-readers`,
+- **Sibling Hee-Lee Oss projects** as consumers: `literacy-from-zero`, `decodable-readers`,
   `read-aloud-audio`, `public-domain-translations`, `open-childrens-books`.
 
 ## Risks & mitigations
@@ -475,7 +475,7 @@ cultural gates before any bulk collection begins.
   risks are *compliance* (copyright + cultural) and *integrity* (false/unsourced/mis-attributed tales),
   addressed by the gates above.
 - **Secrets handling:** PD/open sources need no API keys; any reconciliation credentials stay out of
-  logs, receipts, and commits per Elyos rules. The donated lane never runs headless or authenticates
+  logs, receipts, and commits per Hee-Lee Oss rules. The donated lane never runs headless or authenticates
   an agent.
 - **PII:** fictional characters; no private data about living informants/communities beyond the credit
   the source already publishes; no visitor data; contributor attribution is opt-in and minimal.
@@ -518,7 +518,7 @@ cultural gates before any bulk collection begins.
 ## References
 
 - Project proposal: `governance/proposals/world-folktales-open.md` (TO BE CREATED)
-- Elyos work rules: `CLAUDE.md`
+- Hee-Lee Oss work rules: `CLAUDE.md`
 - Good Deed Definition & risk tiers: `docs/good-deed-definition.md`
 - Task JSON schema: `packages/schema/src/schemas.ts`
 - Portfolio roadmap: `planning/ROADMAP.md`
@@ -577,7 +577,7 @@ text above (not merely listed).
 20. **OCR policy bounded** (OCR only on PD machine-print, human-corrected against the source image,
     accuracy threshold) to prevent corrupt-text ingestion.
 21. **Explicit non-goals carved out** illustration, audio, and platform features, with pointers to the
-    sibling Elyos projects that own them — preventing scope creep.
+    sibling Hee-Lee Oss projects that own them — preventing scope creep.
 22. **Downstream-consumer integration named** (`literacy-from-zero`, `decodable-readers`, etc.) so the
     corpus is positioned as reusable infrastructure, strengthening the "public benefit" case.
 23. **Reading-level / age-range + content-warnings metadata** added as a first-class field and metric,
@@ -589,7 +589,7 @@ text above (not merely listed).
 
 ## Review sign-off
 
-A completeness/correctness pass was performed against the PLAN_SPEC requirements and Elyos guardrails;
+A completeness/correctness pass was performed against the PLAN_SPEC requirements and Hee-Lee Oss guardrails;
 findings were fixed in-document.
 
 - **Metrics measurable?** Yes — all success metrics have a baseline and a 12-month target; the

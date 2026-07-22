@@ -32,7 +32,7 @@ follows is sharpening, not contradiction.
   choice.
 - **`origin: uncertain` as a first-class honest value**, host-independent persistent IDs (w3id/PURL),
   CC-BY-SA segregation, and CI provenance/attribution linters are all sound.
-- **Honesty about the missing steward** (`verifiedNeed=false` throughout) is consistent with the Elyos
+- **Honesty about the missing steward** (`verifiedNeed=false` throughout) is consistent with the Hee-Lee Oss
   "delivered ≠ merged" bar.
 
 **Gaps, errors, and under-specifications (ranked)**
@@ -166,7 +166,7 @@ fused with an open corpus. **No one occupies the intersection.**
 4. **De-colonial attribution by design:** origin-culture-first attribution + collector-stance notes
    directly answers the field's biggest ethical failure.
 5. **Infrastructure, not destination:** JSON/JSON-LD + persistent IDs positions it as the upstream
-   corpus for the whole Elyos open-content portfolio.
+   corpus for the whole Hee-Lee Oss open-content portfolio.
 6. **Radical honesty:** `origin: uncertain`, recorded distortions, and `verifiedNeed=false` build the
    trust that wins institutional stewards.
 
@@ -239,7 +239,7 @@ on memory).
   folklorists, decoupled from the reading UX.
 - **MCP server (`folktales-mcp`):** expose the corpus (query by ATU type, culture, language, reading
   level; fetch provenance; respect TK-Label access tiers) so other agents/apps consume it safely —
-  with restricted/embargoed material *never* served. Natural fit for the Elyos ecosystem.
+  with restricted/embargoed material *never* served. Natural fit for the Hee-Lee Oss ecosystem.
 - **Ties to siblings (parallel):**
   - `open-childrens-books` — illustrated, rights-cleared editions built on this clean text (the plan
     already defers illustration there).
@@ -251,7 +251,7 @@ on memory).
     traditional foodways; share the TK-Label/CARE governance module wholesale.
   - `literacy-from-zero` / `decodable-readers` — leveled/decodable derivations from the corpus.
 - **Shared module to extract:** a reusable **"dual-gate governance kit"** (per-edition copyright
-  analysis schema + TK-Label/CARE consent workflow + provenance linters) usable by every Elyos
+  analysis schema + TK-Label/CARE consent workflow + provenance linters) usable by every Hee-Lee Oss
   cultural-heritage project. This is arguably the most valuable perpendicular asset the project creates.
 
 ---
